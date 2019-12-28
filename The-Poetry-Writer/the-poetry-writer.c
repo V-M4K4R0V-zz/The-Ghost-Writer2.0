@@ -18,51 +18,103 @@ int main()
 
     printf("Your lover Gender [M]or[F] : ")
     ;scanf("%s",gender);
-    if(gender == 'M')
+    if(lang == 'eng')
     {
-        printf("do u [L]ove or [H]ate him [H]or[L] : ")
-        ;scanf("%s",feel);
+        if(gender == 'M')
+        {
+            printf("do u [L]ove or [H]ate him [H]or[L] : ")
+            ;scanf("%s",feel);
+                if (feel == 'L')
+                {
+                    printf("choose from 1 to 5 : ")
+                    ;scanf("%d",ochichin);
+                    switch(ochichin) 
+                    {
+                        case '1' :
+                            printf("Excellent!\n" );
+                            break;
+                        case '2' :
+                            printf("Well done\n" );
+                            break;
+                        case '3' :
+                            printf("You passed\n" );
+                            break;
+                        case '4' :
+                            printf("Better try again\n" );
+                            break;
+                        case '5' :
+                            printf("Better try again\n" );
+                            break;
+                    }
+                }
+                else if (feel == 'H')
+                {
+
+                }
+        }
+        else if (gender == 'F')
+        {
+            printf("do u [L]ove or [H]ate her [H]or[L] : ");
             if (feel == 'L')
             {
-                printf("choose from 1 to 5 : ")
-                ;scanf("%d",ochichin);
-                switch(ochichin) 
-                {
-                    case '1' :
-                        printf("Excellent!\n" );
-                        break;
-                    case '2' :
-                        printf("Well done\n" );
-                        break;
-                    case '3' :
-                        printf("You passed\n" );
-                        break;
-                    case '4' :
-                        printf("Better try again\n" );
-                        break;
-                    case '5' :
-                        printf("Better try again\n" );
-                        break;
-                }
+                    printf("choose from 1 to 5 : ")
+                    ;scanf("%d",ochichin);
             }
             else if (feel == 'H')
             {
-
+                    printf("choose from 1 to 5 : ")
+                    ;scanf("%d",ochichin);
             }
+        }
     }
-    else if (gender == 'F')
+    else if(lang == 'ar')
     {
-        printf("do u [L]ove or [H]ate her [H]or[L] : ");
-        if (feel == 'L')
+        if(gender == 'M')
         {
-                printf("choose from 1 to 5 : ")
-                ;scanf("%d",ochichin);
+            printf("do u [L]ove or [H]ate him [H]or[L] : ")
+            ;scanf("%s",feel);
+                if (feel == 'L')
+                {
+                    printf("choose from 1 to 5 : ")
+                    ;scanf("%d",ochichin);
+                    switch(ochichin) 
+                    {
+                        case '1' :
+                            printf("Excellent!\n" );
+                            break;
+                        case '2' :
+                            printf("Well done\n" );
+                            break;
+                        case '3' :
+                            printf("You passed\n" );
+                            break;
+                        case '4' :
+                            printf("Better try again\n" );
+                            break;
+                        case '5' :
+                            printf("Better try again\n" );
+                            break;
+                    }
+                }
+                else if (feel == 'H')
+                {
+
+                }
         }
-        else if (feel == 'H')
+        else if (gender == 'F')
         {
-                printf("choose from 1 to 5 : ")
-                ;scanf("%d",ochichin);
+            printf("do u [L]ove or [H]ate her [H]or[L] : ");
+            if (feel == 'L')
+            {
+                    printf("choose from 1 to 5 : ")
+                    ;scanf("%d",ochichin);
+            }
+            else if (feel == 'H')
+            {
+                    printf("choose from 1 to 5 : ")
+                    ;scanf("%d",ochichin);
+            }
         }
     }
-return 0;
+    return 0;
 }
